@@ -1,7 +1,7 @@
 //START READY
 $(document).ready(function () {
 	// TIMER COUNT
-	var count = 5
+	var count = 60
 	// CORRECT, WRONG AND UNANSWERED QUESTIONS
 	var correctCount = 0;
 	var wrongCount = 0;
