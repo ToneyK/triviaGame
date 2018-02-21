@@ -1,18 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="assets/css/styl.css">
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	 crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="assets/javascript/app.js">
-	
-
+	<!-- <link rel="stylesheet" href="assets/css/styl.css"> -->
 	<title>Triva Game</title>
 </head>
+
 <body>
-	
+
+	<!-- START CONTAINER -->
+	<div id="startContainer">
+		<h1 class="startLogo">Trivia Game</h1>
+		<button id="startButton">Start</button>
+	</div>
+	<!-- END OF START CONTAINER -->
+	<!-- MID GAME CONTAINER -->
+	<div id="midGameContainer">
+		<!-- TOP LOGO -->
+		<h1 class="startLogo">Trivia Game</h1>
+		<!-- TIMER -->
+		<h1 id="timerTextLine">Time Remaining:
+			<span id="timer">60 Seconds</span>
+		</h1>
+		<!-- QUESTION FOR GAME -->
+		<h1>WHAT IS YOU FAVORITE COLOR?</h1>
+		<input type="radio" name="q1" value="Blue">Blue
+		<input type="radio" name="q1" value="NO! Yellow!">NO! Yellow!
+		<input type="radio" name="q1" value="Ahhhhhhhhhhh!">Ahhhhhhhhhhh!
+		<br>
+		<h1>This Canadian television sportscaster is known for his &quot;Hockey Night in Canada&quot; role, a commentary show during hockey games.</h1>
+		<input type="radio" name="q2" value="Don McKellar">Don McKellar
+		<input type="radio" name="q2" value="Donald Sutherland">Donald Sutherland
+		<input type="radio" name="q2" value="Don Cherry">Don Cherry
+		<br>
+		<h1>What year was the Mona Lisa finished?</h1>
+		<input type="radio" name="q3" value="1487">1487
+		<input type="radio" name="q3" value="1504">1504
+		<input type="radio" name="q3" value="1523">1523
+		<br>
+		<h1>In what year did the Wall Street Crash take place?</h1>
+		<input type="radio" name="q4" value="1929">1929
+		<input type="radio" name="q4" value="1923">1923
+		<input type="radio" name="q4" value="1523">1823
+		<br>
+
+		<!-- COMPLETED BUTTON -->
+		<button id="completedButton">All finished up!</button>
+	</div>
+	<!-- END OF MID GAME CONTAINER -->
+
+	<!-- END CONTAINER -->
+	<div id=endContainer>
+
+		<h1 class="logo"></h1>
+
+		<h1 id="done">All Done!</h1>
+		<br>
+
+		<h1>Correct Answers:
+			<span id="correctAnswers">0</span>
+		</h1>
+		<h1>Incorrect Answers:
+			<span id="WrongAnswers">0</span>
+		</h1>
+		<h1>Unanswered:
+			<span id="unanswered">0</span>
+		</h1>
+	</div>
+	<!-- jQUERY CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- JAVASCRIPT LINK -->
+	<script src="assets/javascript/app.js"></script>
+
+
+	<!-- <script>
+		// AJAX OBJECT FOR TRIVIA API
+		// var queryURL = "https://opentdb.com/api.php?amount=1";
+		// $.ajax({
+		// 	url: queryURL,
+		// 	method: "GET"
+		// }).then(function (response) {
+		// 	console.log(response)
+		// });
+	</script> -->
+
 </body>
+
+
 </html>
