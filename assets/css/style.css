@@ -1,0 +1,12 @@
+body {
+	background-color: lightblue;
+	text-align: center
+	
+}
+
+input[type=radio] {
+	margin-bottom: 50px;
+}
+h1 {
+	font-size: 20px;
+}
